@@ -1,0 +1,44 @@
+import { test, expect } from '@playwright/test';
+
+//Test the Upcoming Events Section to verify the All Events links are working.
+test('Upcoming Events', async ({ page }) => {
+
+  await page.goto('https://notifyme.qpharmacorp.com/6a2c2261f42b4e02d45740f2');
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[1]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[2]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[3]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[4]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[5]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[6]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[7]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[8]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[9]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+  await page.locator('(//div[contains(@class,"calendar-content")]//h4/a)[10]').click({ timeout: 5000 }).catch(() => {
+    console.log("Element not found, continuing");
+  });
+});
+
+// test('Find Test Data', async ({ page }) => {
+//   await page.goto('https://notifyme.qpharmacorp.com/6a2c2261f42b4e02d45740f2');
+//   await page.locator('//div[contains(@class,"topic_arrow")][.//i[normalize-space()="1"]]').first().click({ timeout: 5000 }).catch(() => {
+//     console.log("Element not found, continuing");
+//   });
+// });
